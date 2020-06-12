@@ -6,7 +6,7 @@ const databaseUrl = "../site/database/"; // URL de las bases de datos
 let AlbumId = "demo"; // ID del Album
 let Album = null;
 let Fotografo = null;
-const debbugMode = true; // Modo desarrollo
+const debbugMode = false; // Modo desarrollo
 const iconsUrl = "../site/images/iconos/";
 
 /**
@@ -186,7 +186,7 @@ function obtenerDatosDelAlbum() {
         abrirVentana("info");
         return false;
       }
-      console.log("Album", Album);
+      log("Album", Album);
       // Datos del Fotografo
       if (Album.id !== albumId)
         throw new Error(`No existe el álbum ${albumId}`);
