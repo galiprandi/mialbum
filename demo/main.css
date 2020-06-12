@@ -26,14 +26,20 @@ a {
 a:hover {
   color: var(--color);
 }
-.iconos {
-  width: 1.5rem;
-  height: 1.5rem;
-  filter: invert();
+button.icono,
+button.icono > img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+button.icono {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
   cursor: pointer;
 }
-.iconos:hover {
-  transform: scale(1.2);
+button.icono:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 2px black);
 }
 .ventana {
   display: grid;
@@ -92,19 +98,49 @@ a:hover {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 5px 1rem;
   border-radius: 3px;
   margin: 0.5rem 0;
 }
-#slider .moreOpts {
-  margin: 0 1em;
-  background-color: tan;
+#slider .controles button {
+  margin: 0 1rem;
+  opacity: 0.8;
 }
-#slider .moreOpts > * {
-  margin: 0 1em;
+#slider .opciones {
+  display: none;
+}
+#slider .opciones.active {
+  display: block;
 }
 
 #galeria {
   display: none;
+  margin: 1rem;
+}
+#galeria .opciones {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+}
+#galeri .container {
+  text-align: center;
+}
+#galeria .container > img {
+  margin: 1rem;
+  max-width: 400px;
+}
+
+@media all and (min-width: 768px) {
+  #galeria {
+  }
+}
+@media all and (min-width: 1024px) {
+  #galeria {
+  }
+}
+@media all and (min-width: 1025px) {
+  #galeria {
+  }
 }

@@ -7,7 +7,7 @@ let AlbumId = "09102005"; // ID del Album
 let Album = null;
 let Fotografo = null;
 const debbugMode = true; // Modo desarrollo
-const iconsUrl = "/site/images/iconos/";
+const iconsUrl = "../site/images/iconos/";
 
 /**
  ** Elementos del DOM
@@ -16,6 +16,7 @@ const ventanas = [...document.querySelectorAll(".ventana")];
 const ventanaInfo = document.getElementById("info");
 const ventanaSlider = document.getElementById("slider");
 const ventanaGaleria = document.getElementById("galeria");
+const masOpciones = document.querySelector("#slider .opciones");
 
 const btnToggle = document.getElementById("btnToggle");
 const sliderImage = document.getElementById("imagen");
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   obtenerDatosDelAlbum();
   abrirVentana("info");
 
-  abrirVentana("slider");
+  abrirVentana("galeria");
 });
 
 /**
@@ -43,6 +44,30 @@ function abrirVentana(name) {
   ventanas.forEach((item) => (item.style.display = "none"));
   ventana.style.display = "grid";
 }
+/* Mostrar más opciones */
+function toggleOpciones() {
+  let open = masOpciones.classList.contains("active");
+  log(open);
+
+  if (!open) {
+    sliderPausa();
+    masOpciones.classList.add("active");
+  } else {
+    sliderPlay();
+    masOpciones.classList.remove("active");
+  }
+}
+function descargarImage() {
+  const imgSrc = `//${Album.cfg.url}${sliderImagenActual}${Album.cfg.tipo}`;
+  const imgName = `${Album.titulo}_${sliderImagenActual}${Album.cfg.tipo}`;
+  const link = document.createElement("a");
+  link.setAttribute("href", imgSrc);
+  link.setAttribute("target", "_blank");
+  link.download = imgName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 
 /**
  *  ! Funciones del Slider
@@ -56,14 +81,14 @@ function sliderToggle() {
 function sliderPlay() {
   log("sliderPlay");
   sliderPlayState = true;
-  btnToggle.src = iconsUrl + "play.svg";
+  btnToggle.children[0].src = iconsUrl + "pausa.svg";
 }
 
 /* Pausa Reproducción */
 function sliderPausa() {
   log("sliderPausa");
   sliderPlayState = false;
-  btnToggle.src = iconsUrl + "pause.svg";
+  btnToggle.children[0].src = iconsUrl + "play.svg";
 }
 /* Proxima imagen */
 function sliderProximaImagen() {
@@ -118,6 +143,21 @@ function cargarDatosDelAlbum() {
   const container = document.querySelector("#info > div");
   container.innerHTML = html;
 }
+function cargarGaleria() {
+  let container = document.querySelector("#galeria .container");
+
+  for (let i = 1; i <= Album.cfg.fotos; i++) {
+    const el = document.createElement("img");
+    el.setAttribute("src", `//${Album.cfg.url + i + Album.cfg.tipo}`);
+    el.setAttribute("alt", Album.titulo);
+    el.setAttribute(
+      "onclick",
+      `sliderCambiarImagen(${i});abrirVentana('slider')`
+    );
+    container.appendChild(el);
+  }
+  log(container);
+}
 
 /* Obtiene los datos del Album */
 function obtenerDatosDelAlbum() {
@@ -148,6 +188,7 @@ function obtenerDatosDelAlbum() {
       Fotografo = data[1].filter((item) => item.id === Album.fid)[0];
       log(Fotografo);
       cargarDatosDelAlbum();
+      cargarGaleria();
     }
   );
 }
