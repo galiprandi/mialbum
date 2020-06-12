@@ -122,7 +122,6 @@ function cargarDatosDelAlbum() {
 /* Obtiene los datos del Album */
 function obtenerDatosDelAlbum() {
   albumId = window.location.pathname.replaceAll("/", "");
-  // if (!Album) throw Error(`No existe el Álbum`);
   console.info(`Obtener Datos del Album ${albumId}`);
 
   Promise.all([getJson("albumes.json"), getJson("fotografos.json")]).then(
@@ -166,7 +165,7 @@ function log(msg) {
 /* Get JSon */
 async function getJson(db) {
   try {
-    console.info(`Obteniendo base de datos: ${databaseUrl + db}`);
+    log(`Obteniendo base de datos: ${databaseUrl + db}`);
     let response = await fetch(databaseUrl + db);
     return await response.json();
   } catch (err) {
