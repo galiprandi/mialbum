@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"
+    />
+
+    <!-- Milligram.io -->
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css"
+    />
+
+    <style>
+      input:invalid {
+        border: 1px dashed tomato;
+      }
+      fieldset {
+        border: 1px solid lightgray;
+        padding: 1em;
+        border-radius: 5px;
+        box-shadow: 1px 2px 3px 1px;
+        margin-bottom: 3em;
+      }
+      legend {
+        padding: 0 11px;
+        background: white;
+        font-size: 150%;
+        color: #9b4dca;
+        font-weight: 100;
+      }
+      .container {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Barra superior -->
+      <div class="container">
+        <nav>
+          <h2>Admin</h2>
+        </nav>
+      </div>
+
+      <!-- Nuevo Album -->
+      <div class="container">
+        <form>
+          <fieldset>
+            <legend>Nuevos Album</legend>
+            <label for="fecha">
+              Fecha del evento:
+              <input v-model="album.fecha" type="date" id="fecha" required />
+            </label>
+            <!-- <select id="fid" v-model="album.fid" required> -->
+            <select id="fid" v-model="album.fid" required>
+              <option v-for="item in Fotografos" :value="item.id"
+                >{{item.nombre}}</option
+              >
+            </select>
+            <input
+              type="text"
+              id="id"
+              placeholder="id"
+              v-model="album.id"
+              required
+            />
+            <input
+              type="text"
+              id="titulo"
+              v-model="album.titulo"
+              placeholder="Título"
+              required
+            />
+            <input
+              type="text"
+              id="lugar"
+              v-model="album.lugar"
+              placeholder="Lugar"
+              required
+            />
+
+            <label for="activo">
+              <input
+                type="checkbox"
+                v-model="album.cfg.activo"
+                name="activo"
+                id="activo"
+                checked
+              />
+              Album activo
+            </label>
+            <input
+              type="number"
+              id="fotos"
+              placeholder="Cantidad de Fotos"
+              v-model="album.cfg.fotos"
+              required
+            />
+            <label for="fecha">
+              Fecha de alta:
+              <input
+                type="date"
+                v-model="album.cfg.alta"
+                id="alta"
+                value=""
+                required
+              />
+            </label>
+            <input
+              type="text"
+              v-model="album.cfg.tipo"
+              name="tipo"
+              id="tipo"
+              value=".jpg"
+              required
+            />
+
+            <input type="url" v-model="album.cfg.url" id="url" required />
+
+            <label for="borde">
+              <input
+                type="checkbox"
+                v-model="album.cfg.borde"
+                name="borde"
+                id="borde"
+                checked
+              />
+              Usar borde
+            </label>
+            <input
+              type="number"
+              v-model="album.cfg.timer"
+              name="timer"
+              id="timer"
+              value="6000"
+              required
+            />
+            <button id="generate">Generar</button>
+            <br />
+            <code id="code" style="white-space: normal;">
+              { "id":"{{album.id}}", "fid":"{{album.fid}}",
+              "titulo":"{{album.titulo}}", "lugar":"{{album.lugar}}",
+              "fecha":{{album.fecha}}, "cfg":{ "activo":{{album.cfg.activo}},
+              "alta":{{album.cfg.alta}}, "fotos":{{album.cfg.fotos}},
+              "tipo":"{{album.cfg.tipo}}", "url":"{{album.cfg.url}}",
+              "borde":{{album.cfg.borde}}, "timer": {{album.cfg.timer}} } },
+            </code>
+          </fieldset>
+        </form>
+      </div>
+      <!-- Nuevo Album -->
+
+      <!-- fin de App -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="admin.js"></script>
+    <script type="">
+      // Sugiere ID a partir de la fecha del evento
+      const fecha = document.getElementById("fecha");
+      fecha.addEventListener("change", () => {
+        const album_Id = fechaToId(fecha.value);
+        const exist_Id = isAlbumId(album_Id);
+        if (!exist_Id) {
+          app.album.id = album_Id;
+          app.album.cfg.url = `http://mialbum.ga/${album_Id}/imgs/`;
+        } else app.album.id = "--- NO DISPONIBLE ---";
+      });
+
+      // Genera url al cambiar ID
+      const inputId = document.getElementById("id");
+      inputId.addEventListener("change", () => {
+        app.album.cfg.url = `http://mialbum.ga/${inputId.value}/imgs/`;
+      });
+
+      btnGen = document.getElementById("generate");
+      btnGen.addEventListener("click", (e) => {
+        e.preventDefault();
+        const object = document.getElementById("code");
+        copyToClipboard(object.innerHTML.trim());
+      });
+    </script>
+  </body>
+</html>
