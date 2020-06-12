@@ -1,9 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>miAlbum</title>
+    <meta name="copyright" content="mialbum.ga" />
+
+
+    <meta
+      property="og:title"
+      content="Mira las increíbles fotos de este álbum !"
+    />
+    <meta
+      name="description"
+      content="Una galería llena de hermosas fotogarfías y grandes momentos irrepetibles."
+    />
+    <meta
+      property="og:description"
+      content="Una galería llena de hermosas fotogarfías y grandes momentos irrepetibles."
+    />
+    <meta property="og:image" content="../site/images/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:imageWidth" content="512" />
+    <meta property="og:type" content="website" />
+
+    <link rel="manifest" href="../manifest.json" />
+
+
     <link rel="stylesheet" href="main.css" />
     <link rel="shortcut icon" href="../site/images/logo-72x72.png" type="image/png">
   </head>
@@ -36,7 +60,11 @@
         </button>
       </div>
     </section>
-
     <script src="main.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) 
+        navigator.serviceWorker.register('sw.js')
+
+    </script>
   </body>
 </html>

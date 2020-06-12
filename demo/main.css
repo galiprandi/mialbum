@@ -131,6 +131,7 @@ button.icono:hover {
 #galeria .container > img {
   margin: 1rem;
   max-width: 400px;
+  cursor: pointer;
 }
 
 @media all and (min-width: 768px) {
