@@ -3,9 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>demo</title>
+    <title>miAlbum</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
+
   <body>
-    demo
+    <section id="info" class="ventana">
+      <div class="container"></div>
+    </section>
+    <section id="slider" class="ventana">
+      <img id="imagen" onclick="sliderToggle()" src="" alt="Imágen del evento" aria-label="Imágen del evento"/>
+      <div class="controles">
+          <img
+            id="btnToggle"
+            onclick="sliderToggle()"
+            src="/site/images/iconos/pausa.svg"
+            alt="Iniciar la reproducción"
+            aria-label="Iniciar la reproducción"
+            class="iconos"
+          />
+
+          <!-- <img
+          id="btnMoreOpts"
+          onclick="accionToggle()"
+          src="../cfg/css/iconos/more-options.svg"
+          alt="Más opciones"
+          aria-label="Más opciones"
+          class="iconos"
+        />
+        <div class="moreOpts">
+          <img
+            id="btnOptsDonwload"
+            onclick="accionToggle()"
+            src="../cfg/css/iconos/descargar.svg"
+            alt="Descargar imágen"
+            aria-label="Descargar imágen"
+            class="iconos"
+          /><img
+            id="btnOptsDonwload"
+            onclick="accionToggle()"
+            src="../cfg/css/iconos/descargar.svg"
+            alt="Descargar imágen"
+            aria-label="Descargar imágen"
+            class="iconos"
+          /><img
+            id="btnOptsDonwload"
+            onclick="accionToggle()"
+            src="../cfg/css/iconos/descargar.svg"
+            alt="Descargar imágen"
+            aria-label="Descargar imágen"
+            class="iconos"
+          />
+        </div>
+      </div> -->
+
+    </section>
+    <section id="galeria" class="ventana">
+      Galería
+    </section>
+
+    <script src="main.js"></script>
   </body>
 </html>
