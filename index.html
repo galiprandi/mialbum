@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>miAlbum.ga</title>
+  </head>
+  <body>
+    <script src="./site/js/page.js"></script>
+    <script>
+      page("/about", function () {
+        // Do stuff
+        console.log("abut");
+      });
+      page("*", findAlbum);
+
+      function findAlbum(id) {
+        console.log("album:" + id);
+      }
+    </script>
+  </body>
+</html>
