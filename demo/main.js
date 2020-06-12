@@ -2,7 +2,7 @@
 let sliderPlayState = false; // Estado del Slider
 let sliderImagenActual = 1; // Imagen actual
 let sliderTimer = 5000; // Slider default timer
-const databaseUrl = "/site/database/"; // URL de las bases de datos
+const databaseUrl = "../site/database/"; // URL de las bases de datos
 let AlbumId = "09102005"; // ID del Album
 let Album = null;
 let Fotografo = null;
@@ -122,6 +122,7 @@ function cargarDatosDelAlbum() {
 /* Obtiene los datos del Album */
 function obtenerDatosDelAlbum() {
   albumId = window.location.pathname.replaceAll("/", "");
+  // if (!Album) throw Error(`No existe el Álbum`);
   console.info(`Obtener Datos del Album ${albumId}`);
 
   Promise.all([getJson("albumes.json"), getJson("fotografos.json")]).then(
@@ -165,9 +166,11 @@ function log(msg) {
 /* Get JSon */
 async function getJson(db) {
   try {
+    console.info(`Obteniendo base de datos: ${databaseUrl + db}`);
     let response = await fetch(databaseUrl + db);
     return await response.json();
   } catch (err) {
+    console.error("database:" + databaseUrl + db);
     console.error(err);
   }
 }
