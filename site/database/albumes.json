@@ -1,0 +1,1218 @@
+[
+  {
+    "id": "3218",
+    "fid": "12",
+    "titulo": "Boda Lourdes y Gonzalo",
+    "lugar": "Salon Champagne",
+    "fecha": "2018-03-03T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-04-14T03:00:00.000Z",
+      "fotos": 477,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/3218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "3318",
+    "fid": "13",
+    "titulo": "Cumpleaños de Bautista",
+    "lugar": "Moreno",
+    "fecha": "2018-04-02T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-04-08T03:00:00.000Z",
+      "fotos": 131,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/3318/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "3319",
+    "fid": "23",
+    "titulo": "Bautismo Isabella",
+    "lugar": "Loma Escondida",
+    "fecha": "2019-04-03T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-04-24T03:00:00.000Z",
+      "fotos": 400,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/3319/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "4818",
+    "fid": "12",
+    "titulo": "15 Años Catalina Sarria",
+    "lugar": "Salon Las Cañas",
+    "fecha": "2018-09-04T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-11-13T03:00:00.000Z",
+      "fotos": 628,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/4818/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "5518",
+    "fid": "11",
+    "titulo": "Cumpleaños Luana",
+    "lugar": "Dubai Mega Disco - Leales",
+    "fecha": "2018-06-05T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-07-06T03:00:00.000Z",
+      "fotos": 336,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/5518/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "5919",
+    "fid": "27",
+    "titulo": "Cumpleaños Antonio",
+    "lugar": "Country del Jockey",
+    "fecha": "2019-10-05T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-10-05T03:00:00.000Z",
+      "fotos": 138,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/5919/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "6518",
+    "fid": "14",
+    "titulo": "Precumple #30 Belisa Lucena",
+    "lugar": "Parque sierra Sierra San Javier",
+    "fecha": "2018-06-06T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-06-08T03:00:00.000Z",
+      "fotos": 25,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/6518/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "6919",
+    "fid": "28",
+    "titulo": "15 de Yaz Corbalan",
+    "lugar": "Salón Pacará Center",
+    "fecha": "2019-10-06T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-10-13T03:00:00.000Z",
+      "fotos": 341,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/6919/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "7619",
+    "fid": "18",
+    "titulo": "15 Cami",
+    "lugar": "Kind, Catering & eventos",
+    "fecha": "2019-07-07T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-08-01T03:00:00.000Z",
+      "fotos": 316,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/7619/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "10218",
+    "fid": "12",
+    "titulo": "Boda Florencia y Alejandro",
+    "lugar": "Salón Alamos del Lago",
+    "fecha": "2018-03-10T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-05-16T03:00:00.000Z",
+      "fotos": 731,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/10218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "10318",
+    "fid": "14",
+    "titulo": "15 de Rebeca",
+    "lugar": "El Patio de Yoel",
+    "fecha": "2018-04-10T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-05-05T03:00:00.000Z",
+      "fotos": 224,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/10318/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "12218",
+    "fid": "11",
+    "titulo": "Cumpleaños Valentino",
+    "lugar": "San Miguel de Tucumán",
+    "fecha": "2018-03-12T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-03-13T03:00:00.000Z",
+      "fotos": 578,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/12218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "13619",
+    "fid": "25",
+    "titulo": "15 Años Juli Escarlata",
+    "lugar": "Salón La Sofía Eventos - Yerba Nuena Tucumán",
+    "fecha": "2019-05-26T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-07-13T03:00:00.000Z",
+      "fotos": 947,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/13619/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "14718",
+    "fid": "12",
+    "titulo": "Boda Veronica y Pablo",
+    "lugar": "Salón Pacará III",
+    "fecha": "2018-08-14T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-11-13T03:00:00.000Z",
+      "fotos": 713,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/14718/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "16219",
+    "fid": "18",
+    "titulo": "Sesión: Male",
+    "lugar": "San Miguel de Tucumán",
+    "fecha": "2019-03-16T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-03-22T03:00:00.000Z",
+      "fotos": 67,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/16219/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "16618",
+    "fid": "16",
+    "titulo": "#40",
+    "lugar": "Jockey Club Tucumán",
+    "fecha": "2018-07-16T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-07-25T03:00:00.000Z",
+      "fotos": 338,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/16618/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "17318",
+    "fid": "14",
+    "titulo": "Boda de Daniel y Carolina",
+    "lugar": "Salon Jaipur",
+    "fecha": "2018-04-17T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-05-10T03:00:00.000Z",
+      "fotos": 201,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/17318/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "19618",
+    "fid": "14",
+    "titulo": "Juramento a la Bandera",
+    "lugar": "Esc. Ejército Argentino",
+    "fecha": "2018-07-19T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-07-20T03:00:00.000Z",
+      "fotos": 21,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/19618/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "20518",
+    "fid": "15",
+    "titulo": "Cumple de Alma. 3 años",
+    "lugar": "Mundo Dino",
+    "fecha": "2018-06-20T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-06-28T03:00:00.000Z",
+      "fotos": 130,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/20518/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "20917",
+    "fid": "8",
+    "titulo": "15 de Jaqueline",
+    "lugar": "Asociación Volantes Nordeste, Resistencia, Chaco",
+    "fecha": "2017-10-02T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-12-23T03:00:00.000Z",
+      "fotos": 111,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/20917/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "20919",
+    "fid": "27",
+    "titulo": "Cumple Vero",
+    "lugar": "Nuevo Vountry del Golf",
+    "fecha": "2019-10-20T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-10-21T03:00:00.000Z",
+      "fotos": 142,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/20919/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "21018",
+    "fid": "14",
+    "titulo": "Primer añito Valentino",
+    "lugar": "Yerba buena",
+    "fecha": "2018-11-02T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-11-05T03:00:00.000Z",
+      "fotos": 132,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/21018/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "21217",
+    "fid": "12",
+    "titulo": "Boda de Guillermo y Zarina",
+    "lugar": "Canzonieri Park",
+    "fecha": "2018-01-02T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-03-06T03:00:00.000Z",
+      "fotos": 341,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/21217/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "22418",
+    "fid": "11",
+    "titulo": "Teo Salvador Mansilla Sotelo - 1º Añito",
+    "lugar": "Salón Olaf - Tafí Viejo",
+    "fecha": "2018-05-22T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-05-26T03:00:00.000Z",
+      "fotos": 655,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/22418/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "23319",
+    "fid": "25",
+    "titulo": "15 Años Lucía Santos Esparrel",
+    "lugar": "Salón Olivetto",
+    "fecha": "2019-04-23T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-05-12T03:00:00.000Z",
+      "fotos": 765,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/23319/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "23918",
+    "fid": "20",
+    "titulo": "Boda Ángeles y Sergio",
+    "lugar": "Pacara Center, Tucumán",
+    "fecha": "2018-10-23T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-01-12T03:00:00.000Z",
+      "fotos": 1327,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/23918/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "24518",
+    "fid": "15",
+    "titulo": "EGRESADAS RMG 2018",
+    "lugar": "Salón Encantos del Tafi",
+    "fecha": "2018-06-24T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-06-28T03:00:00.000Z",
+      "fotos": 177,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/24518/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "25218",
+    "fid": "11",
+    "titulo": "Cumpleaños Joel",
+    "lugar": "Elementos Kids",
+    "fecha": "2018-03-25T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-08-31T03:00:00.000Z",
+      "fotos": 282,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/25218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "25318",
+    "fid": "14",
+    "titulo": "Boda Ariel & Paula",
+    "lugar": "Salón Quinta el Pacará",
+    "fecha": "2018-04-25T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-07-20T03:00:00.000Z",
+      "fotos": 349,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/25318/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "25519",
+    "fid": "26",
+    "titulo": "Boda de Carolina y Adrian",
+    "lugar": "Quinta El Pacará 3",
+    "fecha": "2019-06-25T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-08-03T03:00:00.000Z",
+      "fotos": 446,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/25519/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "29918",
+    "fid": "11",
+    "titulo": "Cumpleaños Helenita",
+    "lugar": "Abasto Kids - S.M. Tucumán",
+    "fecha": "2018-10-29T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-11-02T03:00:00.000Z",
+      "fotos": 375,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/29918/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "31118",
+    "fid": "11",
+    "titulo": "Comunión Enzo Melendez",
+    "lugar": "Iglesia Catedral - Las Talitas",
+    "fecha": "2018-12-03T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-12-16T03:00:00.000Z",
+      "fotos": 161,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/31118/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "31319",
+    "fid": "24",
+    "titulo": "Bautismo Benicio",
+    "lugar": "Tafi Viejo, Tucumán",
+    "fecha": "2019-05-01T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-05-01T03:00:00.000Z",
+      "fotos": 103,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/31319/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "31819",
+    "fid": "27",
+    "titulo": "Casamiento Paula y Chompi",
+    "lugar": "Villa Nougués",
+    "fecha": "2019-10-01T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-10-17T03:00:00.000Z",
+      "fotos": 254,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/31819/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "41117",
+    "fid": "7",
+    "titulo": "Muestra Plástica: VIVENCIAS EN COLORES III",
+    "lugar": "Catamarca, Amerian Park Hotel",
+    "fecha": "2017-12-04T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-12-22T03:00:00.000Z",
+      "fotos": 36,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/41117/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "51218",
+    "fid": "17",
+    "titulo": "Oriana y Jesus",
+    "lugar": "Bernabe Araoz 140",
+    "fecha": "2019-01-05T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-01-20T03:00:00.000Z",
+      "fotos": 42,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/51218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "61218",
+    "fid": "18",
+    "titulo": "Sesión Navideña: Guille",
+    "lugar": "San Miguel de Tucumán",
+    "fecha": "2019-01-06T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-01-12T03:00:00.000Z",
+      "fotos": 49,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/61218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "81118",
+    "fid": "17",
+    "titulo": "Sesion Hugo y Luciana",
+    "lugar": "Plaza San Martin",
+    "fecha": "2018-12-08T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-12-10T03:00:00.000Z",
+      "fotos": 22,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/81118/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "81218",
+    "fid": "19",
+    "titulo": "Egresados Condor Huasi",
+    "lugar": "Camping La encantada",
+    "fecha": "2019-01-08T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-01-12T03:00:00.000Z",
+      "fotos": 820,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/81218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "101019",
+    "fid": "25",
+    "titulo": "Olimpiadas Kinésicas Tucumán 2019",
+    "lugar": "Cedar, Hosteria de Tafi VIejo, Quinta Pacara II",
+    "fecha": "2019-11-10T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-11-30T03:00:00.000Z",
+      "fotos": 2215,
+      "tipo": ".webp",
+      "url": "mialbum.ga/101019/webp/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "101118",
+    "fid": "19",
+    "titulo": "Cumpleaños y Comunión Valentino",
+    "lugar": "El Manantial",
+    "fecha": "2018-12-10T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-12-28T03:00:00.000Z",
+      "fotos": 132,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/101118/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "141018",
+    "fid": "12",
+    "titulo": "Boda Silvina y Luis",
+    "lugar": "Salon Acit Yerba Buena",
+    "fecha": "2018-11-14T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-04-02T03:00:00.000Z",
+      "fotos": 632,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/141018/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "151218",
+    "fid": "19",
+    "titulo": "EGRESADOS E.M.M. 2018 - 6to B",
+    "lugar": "Salon LA ENCANTADA",
+    "fecha": "2019-01-15T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-01-26T03:00:00.000Z",
+      "fotos": 837,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/151218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "161119",
+    "fid": "22",
+    "titulo": "Boda Yennifer y Mark",
+    "lugar": "Salón Urkupiña",
+    "fecha": "2019-12-16T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2020-01-11T03:00:00.000Z",
+      "fotos": 151,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/161119/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "161217",
+    "fid": "7",
+    "titulo": "Bautismo de Benicio",
+    "lugar": "Villa Belgrano (Alberdi)",
+    "fecha": "2018-01-16T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-01-31T03:00:00.000Z",
+      "fotos": 92,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/161217/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "171217",
+    "fid": "11",
+    "titulo": "Muestra Fin De Año Tela",
+    "lugar": "Club Avellaneda Central",
+    "fecha": "2018-01-17T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-01-31T03:00:00.000Z",
+      "fotos": 611,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/171217/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "191018",
+    "fid": "18",
+    "titulo": "Boda Paula y Miguel",
+    "lugar": "San Miguel de Tucumán",
+    "fecha": "2018-11-19T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-12-03T03:00:00.000Z",
+      "fotos": 94,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/191018/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "191118",
+    "fid": "18",
+    "titulo": "VICTORIA Sesión Navideña",
+    "lugar": "San Miguel de Tucumán",
+    "fecha": "2018-11-26T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-12-24T03:00:00.000Z",
+      "fotos": 55,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/191118/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "191217",
+    "fid": "10",
+    "titulo": "Sesión Futura Mamá Maria Rosa",
+    "lugar": "Mar del Plata",
+    "fecha": "2018-01-19T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-01-21T03:00:00.000Z",
+      "fotos": 52,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/191217/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "201017",
+    "fid": "6",
+    "titulo": "New Born Victoria",
+    "lugar": "San Miguel de Tucumán",
+    "fecha": "2017-11-20T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-12-08T03:00:00.000Z",
+      "fotos": 34,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/201017/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "201018",
+    "fid": "17",
+    "titulo": "Book de Oriana",
+    "lugar": "Plaza San Martin",
+    "fecha": "2018-11-20T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-11-23T03:00:00.000Z",
+      "fotos": 29,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/201018/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "201117",
+    "fid": "7",
+    "titulo": "Esc. G. Levene: MOULIN ROUGE",
+    "lugar": "Cine Teatro Catamarca",
+    "fecha": "2017-12-20T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-12-13T03:00:00.000Z",
+      "fotos": 123,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/201117/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "211218",
+    "fid": "18",
+    "titulo": "Taller de Danzas Africanas Bembe Guine",
+    "lugar": "San Miguel de Tucumán",
+    "fecha": "2019-01-21T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-02-09T03:00:00.000Z",
+      "fotos": 51,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/211218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "220418",
+    "fid": "11",
+    "titulo": "Máximo Díaz - Bautismo + 1º Añito",
+    "lugar": "Loma Linda - Tafí Viejo",
+    "fecha": "2018-05-22T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-05-27T03:00:00.000Z",
+      "fotos": 278,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/220418/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "221017",
+    "fid": "6",
+    "titulo": "Boda y Bautismo: Andrea, Matias y Delfi",
+    "lugar": "Yerba Buena, Tucumán",
+    "fecha": "2017-11-22T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-12-02T03:00:00.000Z",
+      "fotos": 119,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/221017/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "230319",
+    "fid": "18",
+    "titulo": "15 años Noe",
+    "lugar": "Kind, Catering & Eventos",
+    "fecha": "2019-04-23T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-04-22T03:00:00.000Z",
+      "fotos": 264,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/230319/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "231218",
+    "fid": "12",
+    "titulo": "Boda Karen y Facundo",
+    "lugar": "Salón Pacará II",
+    "fecha": "2019-01-23T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-03-27T03:00:00.000Z",
+      "fotos": 823,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/231218/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "241118",
+    "fid": "19",
+    "titulo": "Egresados E.M.M. 2018 6to A",
+    "lugar": "Camping La Encantada",
+    "fecha": "2018-12-24T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-12-28T03:00:00.000Z",
+      "fotos": 694,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/241118/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "261018",
+    "fid": "11",
+    "titulo": "15 Martina",
+    "lugar": "Iglesia La Merced",
+    "fecha": "2018-11-26T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-12-16T03:00:00.000Z",
+      "fotos": 182,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/261018/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "261019",
+    "fid": "18",
+    "titulo": "Casamiento Rocío & Jorge",
+    "lugar": "Quincho de la Palta Vieja",
+    "fecha": "2019-11-26T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-12-19T03:00:00.000Z",
+      "fotos": 213,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/261019/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "271018",
+    "fid": "11",
+    "titulo": "1º Año y Bautismo Felipe",
+    "lugar": "San Miguel De Tucumán",
+    "fecha": "2018-11-27T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-12-16T03:00:00.000Z",
+      "fotos": 566,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/271018/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "300319",
+    "fid": "18",
+    "titulo": "15 años Vale",
+    "lugar": "Kind, Catering & Eventos",
+    "fecha": "2019-04-30T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-04-22T03:00:00.000Z",
+      "fotos": 138,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/300319/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "4112017",
+    "fid": "9",
+    "titulo": "Boda Stella & Rolando",
+    "lugar": "Country",
+    "fecha": "2017-12-04T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-12-28T03:00:00.000Z",
+      "fotos": 612,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/4112017/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "12092017",
+    "fid": "2",
+    "titulo": "Nacimiento de Luciano",
+    "lugar": "Estudio Guardami Photography",
+    "fecha": "2017-10-12T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-11-09T03:00:00.000Z",
+      "fotos": 37,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/12092017/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "15122018",
+    "fid": "22",
+    "titulo": "Cumple 15 Martina",
+    "lugar": "Salón Lizana. Yerba Buena",
+    "fecha": "2019-01-15T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-02-23T03:00:00.000Z",
+      "fotos": 246,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/15122018/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "17062017",
+    "fid": "4",
+    "titulo": "15 años de Camila",
+    "lugar": "Hotel Carlos V",
+    "fecha": "2017-07-17T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-11-30T03:00:00.000Z",
+      "fotos": 27,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/17062017/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "21102017",
+    "fid": "6",
+    "titulo": "Sofia Diez Fiesta 15 años",
+    "lugar": "San Miguel de Tucumán",
+    "fecha": "2017-11-21T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-12-01T03:00:00.000Z",
+      "fotos": 257,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/21102017/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "22102017",
+    "fid": "5",
+    "titulo": "Academia Mahaila Bahir",
+    "lugar": "Leales, San Miguel de Tucumán",
+    "fecha": "2017-11-22T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-12-01T03:00:00.000Z",
+      "fotos": 227,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/22102017/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "29092018",
+    "fid": "17",
+    "titulo": "Bautismo de Felipe",
+    "lugar": "Iglesia Cristo Rey",
+    "fecha": "2018-10-29T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-11-02T03:00:00.000Z",
+      "fotos": 47,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/29092018/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "paulacarlino15",
+    "fid": "27",
+    "titulo": "15 años",
+    "lugar": "San Miguel de Tucumán, Argentina",
+    "fecha": "2019-10-13T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2019-10-13T03:00:00.000Z",
+      "fotos": 204,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/paulacarlino15/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "081118",
+    "fid": "11",
+    "titulo": "2 Añitos Lucas",
+    "lugar": "San Miguel De Tucumán",
+    "fecha": "2018-12-08T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2018-12-16T03:00:00.000Z",
+      "fotos": 182,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/081118/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "01102017",
+    "fid": "3",
+    "titulo": "Bautismo Nicolino",
+    "lugar": "Club Lawn Tennis, Tucuman",
+    "fecha": "2017-11-01T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-11-18T03:00:00.000Z",
+      "fotos": 112,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/01102017/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "09102005",
+    "fid": "1",
+    "titulo": "Boda Macky y Germán",
+    "lugar": "Rafaela, Santa Fe",
+    "fecha": "2005-11-09T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-11-10T03:00:00.000Z",
+      "fotos": 235,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/09102005/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "dev",
+    "fid": "1",
+    "titulo": "Boda de Laura y José",
+    "lugar": "Praia de Futuro, Fortaleza, Brasil",
+    "fecha": "2017-02-10T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-11-14T03:00:00.000Z",
+      "fotos": 26,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/dev/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "demop",
+    "fid": "1",
+    "titulo": "Boda de Laura y José",
+    "lugar": "Desarrollo",
+    "fecha": "2017-02-10T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-11-14T03:00:00.000Z",
+      "fotos": 26,
+      "tipo": ".webp",
+      "url": "mialbum.ga/demop/webp/",
+      "borde": true,
+      "timer": 6000
+    }
+  },
+  {
+    "id": "demo",
+    "fid": "1",
+    "titulo": "Boda de Laura y José",
+    "lugar": "Praia de Futuro, Fortaleza, Brasil",
+    "fecha": "2017-02-10T03:00:00.000Z",
+    "cfg": {
+      "activo": true,
+      "alta": "2017-11-14T03:00:00.000Z",
+      "fotos": 26,
+      "tipo": ".jpg",
+      "url": "mialbum.ga/demo/imgs/",
+      "borde": true,
+      "timer": 6000
+    }
+  }
+]
