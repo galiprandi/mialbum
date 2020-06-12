@@ -3,7 +3,7 @@ let sliderPlayState = false; // Estado del Slider
 let sliderImagenActual = 1; // Imagen actual
 let sliderTimer = 5000; // Slider default timer
 const databaseUrl = "../site/database/"; // URL de las bases de datos
-let AlbumId = "09102005"; // ID del Album
+let AlbumId = "demo"; // ID del Album
 let Album = null;
 let Fotografo = null;
 const debbugMode = true; // Modo desarrollo
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   obtenerDatosDelAlbum();
   abrirVentana("info");
 
-  abrirVentana("galeria");
+  // abrirVentana("galeria");
 });
 
 /**
@@ -127,19 +127,24 @@ function cargarDatosDelAlbum() {
         <h1 class="alb-Titulo">${Album.titulo}</h1>
         <p class="alb-Fecha">${fecha.toLocaleDateString("es-AR", options)}</p>
         <p class="alb-Lugar">${Album.lugar}</p>
-        <p class="alb-Fotos">${Album.cfg.fotos} imágenes, ${
-    (Album.cfg.fotos * Album.cfg.timer) / 1000 / 60
-  } min. de reproducción</p>
-        <button id="iniciarSlider" class="shadow" onclick="abrirVentana('slider')">Iniciar álbum</button>
+        <p class="alb-Fotos">
+          ${Album.cfg.fotos} imágenes, 
+          ${Math.round((Album.cfg.fotos * Album.cfg.timer) / 1000 / 60)}
+          min. de reproducción</p>
+        <button id="iniciarSlider" 
+          class="shadow" 
+          onclick="abrirVentana('slider');toggleFullScreen()">Iniciar álbum</button>
         <h1 class="fot-Nombre">${Fotografo.nombre}</h1>
-        <p class="fot-web"><a href="${Fotografo.web}">${Fotografo.web}</a></p>
-        <p class="fot-Tel"><a href="tel:${Fotografo.telelefono}">Tel: ${
-    Fotografo.telelefono
-  }</a></p>
-        <p class="fot-email"><a class="fot-email" href="mailto:${
-          Fotografo.email
-        }">${Fotografo.email}</a></p>
-  `;
+        <p class="fot-web">
+          <a href="${Fotografo.web}" target="_blank" rel="noopener noreferrer">
+          ${Fotografo.web}</a>
+        <p class="fot-Tel">
+          <a href="tel:+${Fotografo.telelefono}">Tel:${Fotografo.telelefono}</a>
+        </p>
+        <p class="fot-email">
+          <a href="mailto:${Fotografo.email}">${Fotografo.email}</a>
+        </p>
+        `;
   const container = document.querySelector("#info > div");
   container.innerHTML = html;
 }

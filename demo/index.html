@@ -15,11 +15,14 @@
     <section id="slider" class="ventana">
       <img id="imagen" onclick="sliderToggle()" src="../site/images/logo.png" alt="Imágen del evento" aria-label="Imágen del evento"/>
       <div class="controles">
-          <button onclick="sliderToggle()" id="btnToggle" class="icono">
-            <img src="../site/images/iconos/pausa.svg" alt="Iniciar la reproducción">
+          <button onclick="abrirVentana('info')" id="btnAbrirInfo" class="icono" title="Mostrar datos del Álbum">
+            <img src="../site/images/iconos/camara.svg" >
           </button>
-          <button onclick="abrirVentana('galeria')" class="icono">
-            <img src="../site/images/iconos/galeria.svg" alt="Mostrar Galería">
+          <button onclick="sliderToggle()" id="btnToggle" class="icono" title="Iniciar/Pausar la reproducción">
+            <img src="../site/images/iconos/pausa.svg" >
+          </button>
+          <button onclick="abrirVentana('galeria')" class="icono" title="Abrir Galería">
+            <img src="../site/images/iconos/galeria.svg">
           </button>
           <!-- <button onclick="descargarImage()" class="icono">
             <img src="../site/images/iconos/descargar.svg" alt="Iniciar la reproducción">

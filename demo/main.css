@@ -51,11 +51,12 @@ button.icono:hover {
 /* infoAlbum */
 #info {
   display: none;
+  background-size: cover;
 }
 #info .container {
   background-color: var(--claro);
   color: var(--ocuro);
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 5px 5px 3px 0 rgba(0, 0, 0, 0.3);
   line-height: 1.4;
   letter-spacing: 0.086em;
@@ -124,7 +125,7 @@ button.icono:hover {
   right: 0;
   margin: 1rem;
 }
-#galeri .container {
+#galeria .container {
   text-align: center;
 }
 #galeria .container > img {
