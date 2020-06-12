@@ -121,7 +121,12 @@ function cargarDatosDelAlbum() {
 
 /* Obtiene los datos del Album */
 function obtenerDatosDelAlbum() {
-  albumId = window.location.pathname.replaceAll("/", "");
+  // albumId = window.location.pathname.replaceAll("/", "");
+  albumId = window.location.pathname
+    .split("/")
+    .filter((el) => !!el)
+    .slice(-1)[0];
+
   console.info(`Obtener Datos del Album ${albumId}`);
 
   Promise.all([getJson("albumes.json"), getJson("fotografos.json")]).then(
