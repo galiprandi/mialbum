@@ -112,10 +112,14 @@ button.icono:hover {
   padding: 5px 1rem;
   border-radius: 3px;
   margin: 0.5rem 0;
+  opacity: 0.3;
+  transition: opacity 500ms linear;
+}
+#slider .controles:hover {
+  opacity: 1;
 }
 #slider .controles button {
   margin: 0 1rem;
-  opacity: 0.8;
 }
 #slider .opciones {
   display: none;
