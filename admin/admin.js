@@ -1,4 +1,5 @@
 console.clear();
+
 let Albumes, Fotografos;
 
 var app = new Vue({
