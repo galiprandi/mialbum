@@ -84,11 +84,20 @@ button.icono:hover {
 
 /* Slider */
 #slider {
+  --fotografo: "";
   display: none;
   height: 100vh;
   place-content: center;
 }
-#slider #imagen {
+#slider::before {
+  content: var(--fotografo);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0.3rem;
+  font-size: 12px;
+}
+#imagen {
   max-width: 100%;
   max-height: 100vh;
 }

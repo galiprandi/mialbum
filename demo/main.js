@@ -113,6 +113,10 @@ function cargarDatosDelAlbum() {
   const primeraImagen = `//${Album.cfg.url}1${Album.cfg.tipo}`;
   ventanaInfo.style.backgroundImage = `url(${primeraImagen})`;
   sliderImage.src = primeraImagen;
+  ventanaSlider.style.setProperty(
+    "--fotografo",
+    '"Ⓒ ' + Fotografo.nombre + '"'
+  );
 
   sliderTimer = Album.cfg.timer;
   let fecha = new Date(Album.fecha);
@@ -148,6 +152,7 @@ function cargarDatosDelAlbum() {
   const container = document.querySelector("#info > div");
   container.innerHTML = html;
 }
+
 function cargarGaleria() {
   let container = document.querySelector("#galeria .container");
 
