@@ -17,7 +17,7 @@
         const albumId = input.value;
 
         if (albumId) {
-          const existe = !!AlbumesId.find((item) => item === albumId);
+          const existe = AlbumesId.find((item) => item === albumId);
           console.log(existe);
           if (existe) location.href = `${location.host}/#${albumId}`;
           else {
