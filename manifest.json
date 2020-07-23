@@ -4,49 +4,39 @@
   "description": "Una galería llena de hermosas fotogarfías y grandes momentos irrepetibles.",
   "default_locale": "es",
   "theme_color": "#262626",
-  "background_color": "#262626",
+  "background_color": "#ffffff",
   "display": "fullscreen",
   "orientation": "landscape",
-  "Scope": "./",
-  "start_url": "./",
+  "Scope": "/",
+  "start_url": "/",
   "icons": [
     {
-      "src": "../site/images/logo-72x72.png",
+      "src": "site/images/logo.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "../site/images/logo-96x96.png",
+      "src": "site/images/logo.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "../site/images/logo-128x128.png",
+      "src": "site/images/logo.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "../site/images/logo-144x144.png",
+      "src": "site/images/logo.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "../site/images/logo-152x152.png",
-      "sizes": "152x152",
-      "type": "image/png"
-    },
-    {
-      "src": "../site/images/logo-192x192.png",
+      "src": "site/images/logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "../site/images/logo-384x384.png",
-      "sizes": "384x384",
-      "type": "image/png"
-    },
-    {
-      "src": "../site/images/logo-512x512.png",
+      "src": "site/images/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }

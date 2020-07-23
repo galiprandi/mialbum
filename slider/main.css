@@ -90,6 +90,7 @@ button.icono:hover {
   height: 100vh;
   place-content: center;
 }
+
 #slider::before {
   content: var(--fotografo);
   position: absolute;
@@ -98,10 +99,12 @@ button.icono:hover {
   margin: 0.3rem;
   font-size: 12px;
 }
+
 #imagen {
   max-width: 100%;
   max-height: 100vh;
 }
+
 #slider .controles {
   display: flex;
   position: fixed;

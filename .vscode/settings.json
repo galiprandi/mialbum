@@ -1,5 +1,7 @@
 {
-    "minify.minifyExistingOnSave": true,
-    "es6-css-minify.enableAutoprefixer": true,
-    "es6-css-minify.minifyOnSave": "exists"
+  "minify.minifyExistingOnSave": true,
+  "es6-css-minify.enableAutoprefixer": true,
+  "es6-css-minify.minifyOnSave": "exists",
+  "es6-css-minify.autoprefixer": {},
+  "es6-css-minify.genJSmap": true
 }
