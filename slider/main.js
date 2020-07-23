@@ -10,7 +10,7 @@ let Fotografo = null;
 let debbugMode = true; // Modo desarrollo
 if (location.host === "galiprandi.github.io") debbugMode = false;
 
-const iconsUrl = "../site/images/iconos/";
+const iconsUrl = "site/images/iconos/";
 
 /**
  ** Elementos del DOM
