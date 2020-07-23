@@ -19,9 +19,9 @@
         if (albumId) {
           const existe = AlbumesId.find((item) => item === albumId);
           console.log(existe);
-          if (existe) location.href = `${location.host}/#${albumId}`;
+          if (existe) location.href = `//${location.host}/#${albumId}`;
           else {
-            msg.textContent = "El Álbum no existe";
+            msg.textContent = "El álbum no existe";
           }
         } else {
           msg.textContent = input.placeholder = "El álbum no existe";
@@ -35,7 +35,6 @@
           const response = await fetch(url);
           const data = await response.json();
           AlbumesId = data.map((item) => item.id);
-          console.log(AlbumesId);
         } catch (error) {
           console.error(error);
         }
