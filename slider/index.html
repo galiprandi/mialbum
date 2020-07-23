@@ -62,8 +62,8 @@
     </section>
     <script src="main.js"></script>
     <script>
-      if ('serviceWorker' in navigator)  {
-        // navigator.serviceWorker.register('sw.js')
+      if ('serviceWorker' in navigator && location.host === "galiprandi.github.io")  {
+        navigator.serviceWorker.register('sw.js')
       }
 
     </script>
