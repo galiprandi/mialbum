@@ -6,7 +6,10 @@ const databaseUrl = "site/database/"; // URL de las bases de datos
 let AlbumId = "demo"; // ID del Album
 let Album = null;
 let Fotografo = null;
-const debbugMode = true; // Modo desarrollo
+
+let debbugMode = true; // Modo desarrollo
+if (location.host === "galiprandi.github.io") debbugMode = false;
+
 const iconsUrl = "../site/images/iconos/";
 
 /**
