@@ -39,7 +39,8 @@ button.icono {
 }
 button.icono:hover {
   transform: scale(1.1);
-  filter: drop-shadow(0 0 2px black);
+  -webkit-filter: drop-shadow(0 0 2px black);
+          filter: drop-shadow(0 0 2px black);
 }
 .ventana {
   display: grid;
@@ -115,7 +116,8 @@ button.icono:hover {
   opacity: 0.3;
   transition: opacity 500ms linear;
 }
-#slider .controles:hover {
+#slider .controles:hover,
+#slider .controles:focus {
   opacity: 1;
 }
 #slider .controles button {

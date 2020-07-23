@@ -6,7 +6,7 @@ const databaseUrl = "../site/database/"; // URL de las bases de datos
 let AlbumId = "demo"; // ID del Album
 let Album = null;
 let Fotografo = null;
-const debbugMode = false; // Modo desarrollo
+const debbugMode = true; // Modo desarrollo
 const iconsUrl = "../site/images/iconos/";
 
 /**
@@ -23,7 +23,7 @@ const sliderImage = document.getElementById("imagen");
 
 /* INICIA LA APP */
 document.addEventListener("DOMContentLoaded", function () {
-  log("Iniciando App");
+  if (debbugMode) console.log("Iniciando App");
   obtenerDatosDelAlbum();
   abrirVentana("info");
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 /* Abre una ventana */
 function abrirVentana(name) {
-  name === "slider" ? sliderPlay() : sliderPausa();
+  name === "slider" ? Slider.Play() : Slider.Pausa();
   const ventana = document.getElementById(name);
   if (!ventana) {
     console.error(`No existe la ventana ${name}`);
@@ -47,13 +47,13 @@ function abrirVentana(name) {
 /* Mostrar más opciones */
 function toggleOpciones() {
   let open = masOpciones.classList.contains("active");
-  log(open);
+  if (debbugMode) console.log(open);
 
   if (!open) {
-    sliderPausa();
+    Slider.Pausa();
     masOpciones.classList.add("active");
   } else {
-    sliderPlay();
+    Slider.Play();
     masOpciones.classList.remove("active");
   }
 }
@@ -70,39 +70,75 @@ function descargarImage() {
 }
 
 /**
- *  ! Funciones del Slider
+ * ! Funciones del Slider
  */
-/* Cambia estado de la Reproducción */
-function sliderToggle() {
-  if (sliderPlayState) sliderPausa();
-  else sliderPlay();
-}
-/* Inica Reproducción */
-function sliderPlay() {
-  log("sliderPlay");
-  sliderPlayState = true;
-  btnToggle.children[0].src = iconsUrl + "pausa.svg";
-}
 
-/* Pausa Reproducción */
-function sliderPausa() {
-  log("sliderPausa");
-  sliderPlayState = false;
-  btnToggle.children[0].src = iconsUrl + "play.svg";
-}
-/* Proxima imagen */
-function sliderProximaImagen() {
-  if (sliderImagenActual === Album.cfg.fotos) sliderImagenActual = 1;
-  else sliderImagenActual++;
-  sliderCambiarImagen(sliderImagenActual);
-}
-/* Cambia a una imagen */
-function sliderCambiarImagen(img) {
-  sliderImagenActual = img;
-  const imgSrc = `//${Album.cfg.url}${sliderImagenActual}${Album.cfg.tipo}`;
-  log(`Cambiando a imagen: ${imgSrc}`);
-  sliderImage.src = imgSrc;
-}
+const Slider = {
+  Play: () => {
+    if (debbugMode) console.info("sliderPlay()");
+    sliderPlayState = true;
+    btnToggle.children[0].src = iconsUrl + "pausa.svg";
+  },
+
+  Pausa: () => {
+    if (debbugMode) console.info("sliderPausa()");
+    sliderPlayState = false;
+    btnToggle.children[0].src = iconsUrl + "play.svg";
+  },
+
+  Toggle: () => {
+    if (sliderPlayState) Slider.Pausa();
+    else Slider.Play();
+  },
+
+  ProximaImagen: () => {
+    if (sliderImagenActual === Album.cfg.fotos) sliderImagenActual = 1;
+    else sliderImagenActual++;
+    Slider.CambiarImagen(sliderImagenActual);
+  },
+
+  CambiarImagen: (img) => {
+    sliderImagenActual = img;
+    const imgSrc = `//${Album.cfg.url}${sliderImagenActual}${Album.cfg.tipo}`;
+    if (debbugMode) console.info(`Cambiando a imagen: ${imgSrc}`);
+    sliderImage.src = imgSrc;
+  },
+};
+
+// /**
+//  *  ! Funciones del Slider
+//  */
+// /* Cambia estado de la Reproducción */
+// function sliderToggle() {
+//   if (sliderPlayState) sliderPausa();
+//   else sliderPlay();
+// }
+// /* Inica Reproducción */
+// function sliderPlay() {
+//   if (debbugMode) console.info("sliderPlay()");
+//   sliderPlayState = true;
+//   btnToggle.children[0].src = iconsUrl + "pausa.svg";
+// }
+
+// /* Pausa Reproducción */
+// function sliderPausa() {
+//   if (debbugMode) console.info("sliderPausa()");
+//   sliderPlayState = false;
+//   btnToggle.children[0].src = iconsUrl + "play.svg";
+// }
+// /* Proxima imagen */
+// function sliderProximaImagen() {
+//   if (sliderImagenActual === Album.cfg.fotos) sliderImagenActual = 1;
+//   else sliderImagenActual++;
+//   sliderCambiarImagen(sliderImagenActual);
+// }
+// /* Cambia a una imagen */
+// function sliderCambiarImagen(img) {
+//   sliderImagenActual = img;
+//   const imgSrc = `//${Album.cfg.url}${sliderImagenActual}${Album.cfg.tipo}`;
+//   if (debbugMode) console.info(`Cambiando a imagen: ${imgSrc}`);
+//   sliderImage.src = imgSrc;
+// }
 
 /**
  * ! Funciones del Album
@@ -110,9 +146,10 @@ function sliderCambiarImagen(img) {
 /* Carga Datos de la ventana Info */
 function cargarDatosDelAlbum() {
   if (!Album.id) return false;
-  const primeraImagen = `//${Album.cfg.url}1${Album.cfg.tipo}`;
-  ventanaInfo.style.backgroundImage = `url(${primeraImagen})`;
-  sliderImage.src = primeraImagen;
+  // const primeraImagen = `//${Album.cfg.url}1${Album.cfg.tipo}`;
+  //const primeraImagen = `https://storage.googleapis.com/mialbum.ga/${Album.id}/imgs/1${Album.cfg.tipo}`;
+  //ventanaInfo.style.backgroundImage = `url(${primeraImagen})`;
+  //sliderImage.src = primeraImagen;
   ventanaSlider.style.setProperty(
     "--fotografo",
     '"Ⓒ ' + Fotografo.nombre + '"'
@@ -154,35 +191,47 @@ function cargarDatosDelAlbum() {
 }
 
 function cargarGaleria() {
+  const urlImgs = `https://storage.googleapis.com/mialbum.ga/${Album.id}/imgs`;
+  // Ventana Info
+  const primeraImagen = `${urlImgs}/1${Album.cfg.tipo}`;
+  ventanaInfo.style.backgroundImage = `url(${primeraImagen})`;
+  sliderImage.src = primeraImagen;
+
   let container = document.querySelector("#galeria .container");
 
   for (let i = 1; i <= Album.cfg.fotos; i++) {
     const el = document.createElement("img");
-    el.setAttribute("src", `//${Album.cfg.url + i + Album.cfg.tipo}`);
+    // el.setAttribute("src", `//${Album.cfg.url + i + Album.cfg.tipo}`);
+    el.setAttribute(
+      "src",
+      `https://storage.googleapis.com/mialbum.ga/${Album.id}/imgs/${
+        i + Album.cfg.tipo
+      }`
+    );
     el.setAttribute("alt", Album.titulo);
     el.setAttribute(
       "onclick",
-      `sliderCambiarImagen(${i});abrirVentana('slider')`
+      `Slider.CambiarImagen(${i});abrirVentana('slider')`
     );
     container.appendChild(el);
   }
-  log(container);
 }
 
 /* Obtiene los datos del Album */
 function obtenerDatosDelAlbum() {
-  // albumId = window.location.pathname.replaceAll("/", "");
+  /*
   albumId = window.location.pathname
     .split("/")
     .filter((el) => !!el)
     .slice(-1)[0];
+  */
+  albumId = window.location.hash.replace("#", "");
 
-  console.info(`Obtener Datos del Album ${albumId}`);
+  console.info(`Obteniendo datos del álbum ${albumId}`);
 
   Promise.all([getJson("albumes.json"), getJson("fotografos.json")]).then(
     (data) => {
       // Datos del Album
-
       Album = data[0].filter((item) => item.id === albumId)[0];
       if (!Album) {
         console.error("No se encuentra el álbum ID: " + albumId);
@@ -191,12 +240,12 @@ function obtenerDatosDelAlbum() {
         abrirVentana("info");
         return false;
       }
-      log("Album", Album);
+      if (debbugMode) console.info("Álbum", Album);
       // Datos del Fotografo
       if (Album.id !== albumId)
         throw new Error(`No existe el álbum ${albumId}`);
       Fotografo = data[1].filter((item) => item.id === Album.fid)[0];
-      log(Fotografo);
+      if (debbugMode) console.info("Fotógrafo:", Fotografo);
       cargarDatosDelAlbum();
       cargarGaleria();
     }
@@ -210,18 +259,20 @@ function obtenerDatosDelAlbum() {
 /* Funcion Interval */
 setInterval(() => {
   if (!Album) return false;
-  if (sliderPlayState) sliderProximaImagen();
+  if (sliderPlayState) Slider.ProximaImagen();
 }, sliderTimer);
 
 /* Regista mensajes en console */
+/*
 function log(msg) {
   if (debbugMode) console.log(msg);
 }
-
+*/
 /* Get JSon */
 async function getJson(db) {
   try {
-    log(`Obteniendo base de datos: ${databaseUrl + db}`);
+    if (debbugMode)
+      console.info(`Obteniendo base de datos: ${databaseUrl + db}`);
     let response = await fetch(databaseUrl + db);
     return await response.json();
   } catch (err) {
@@ -231,6 +282,7 @@ async function getJson(db) {
 }
 
 function toggleFullScreen() {
+  if (debbugMode) return false;
   if (!document.fullscreenElement) {
     document.documentElement.requestFullscreen();
   } else {

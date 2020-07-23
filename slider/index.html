@@ -37,12 +37,12 @@
       <div class="container"></div>
     </section>
     <section id="slider" class="ventana">
-      <img id="imagen" onclick="sliderToggle()" src="../site/images/logo.png" alt="Imágen del evento" aria-label="Imágen del evento"/>
+      <img id="imagen" onclick="Slider.Toggle()" src="../site/images/logo.png" alt="Imágen del evento" aria-label="Imágen del evento"/>
       <div class="controles">
           <button onclick="abrirVentana('info')" id="btnAbrirInfo" class="icono" title="Mostrar datos del Álbum">
             <img src="../site/images/iconos/camara.svg" >
           </button>
-          <button onclick="sliderToggle()" id="btnToggle" class="icono" title="Iniciar/Pausar la reproducción">
+          <button onclick="Slider.Toggle()" id="btnToggle" class="icono" title="Iniciar/Pausar la reproducción">
             <img src="../site/images/iconos/pausa.svg" >
           </button>
           <button onclick="abrirVentana('galeria')" class="icono" title="Abrir Galería">
@@ -62,8 +62,9 @@
     </section>
     <script src="main.js"></script>
     <script>
-      if ('serviceWorker' in navigator) 
-        navigator.serviceWorker.register('sw.js')
+      if ('serviceWorker' in navigator)  {
+        // navigator.serviceWorker.register('sw.js')
+      }
 
     </script>
   </body>
