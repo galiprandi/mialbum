@@ -291,3 +291,13 @@ function toggleFullScreen() {
     }
   }
 }
+
+async function shareAlbum() {
+  try {
+    if ("share" in navigator) {
+      await navigator.share({ url: location.href });
+    } else throw "navigator.share() no disponible";
+  } catch (error) {
+    console.error(error);
+  }
+}

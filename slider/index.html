@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>miAlbum</title>
     <meta name="copyright" content="mialbum.ga" />
-
-
     <meta
       property="og:title"
       content="Mira las increíbles fotos de este álbum !"
@@ -26,10 +24,11 @@
     <meta property="og:type" content="website" />
 
     <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 
-    <link rel="stylesheet" href="main.css" />
-    <link rel="shortcut icon" href="../site/images/logo-72x72.png" type="image/png">
+    <link rel="stylesheet" href="slider/main.css" />
+    
   </head>
 
   <body>
@@ -37,35 +36,34 @@
       <div class="container"></div>
     </section>
     <section id="slider" class="ventana">
-      <img id="imagen" onclick="Slider.Toggle()" src="../site/images/logo.png" alt="Imágen del evento" aria-label="Imágen del evento"/>
+      <img id="imagen" onclick="Slider.Toggle()" src="" alt="Imágen del evento" aria-label="Imágen del evento"/>
       <div class="controles">
           <button onclick="abrirVentana('info')" id="btnAbrirInfo" class="icono" title="Mostrar datos del Álbum">
-            <img src="../site/images/iconos/camara.svg" >
+            <img src="site/images/iconos/camara.svg" >
           </button>
           <button onclick="Slider.Toggle()" id="btnToggle" class="icono" title="Iniciar/Pausar la reproducción">
-            <img src="../site/images/iconos/pausa.svg" >
+            <img src="site/images/iconos/pausa.svg" >
           </button>
           <button onclick="abrirVentana('galeria')" class="icono" title="Abrir Galería">
-            <img src="../site/images/iconos/galeria.svg">
+            <img src="site/images/iconos/galeria.svg">
           </button>
           <!-- <button onclick="descargarImage()" class="icono">
-            <img src="../site/images/iconos/descargar.svg" alt="Iniciar la reproducción">
+            <img src="site/images/iconos/descargar.svg" alt="Iniciar la reproducción">
           </button> -->
     </section>
     <section id="galeria" class="ventana">
       <div class="container"></div>
       <div class="opciones">
         <button onclick="abrirVentana('slider')" class="icono">
-          <img src="../site/images/iconos/cerrar.svg" alt="Mostrar Galería">
+          <img src="site/images/iconos/cerrar.svg" alt="Mostrar Galería">
         </button>
       </div>
     </section>
-    <script src="main.js"></script>
+    <script src="slider/main.js"></script>
     <script>
       if ('serviceWorker' in navigator && location.host === "galiprandi.github.io")  {
         navigator.serviceWorker.register('sw.js')
       }
-
     </script>
   </body>
 </html>
