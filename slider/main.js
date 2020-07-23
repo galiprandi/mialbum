@@ -108,51 +108,14 @@ const Slider = {
   },
 };
 
-// /**
-//  *  ! Funciones del Slider
-//  */
-// /* Cambia estado de la Reproducción */
-// function sliderToggle() {
-//   if (sliderPlayState) sliderPausa();
-//   else sliderPlay();
-// }
-// /* Inica Reproducción */
-// function sliderPlay() {
-//   if (debbugMode) console.info("sliderPlay()");
-//   sliderPlayState = true;
-//   btnToggle.children[0].src = iconsUrl + "pausa.svg";
-// }
-
-// /* Pausa Reproducción */
-// function sliderPausa() {
-//   if (debbugMode) console.info("sliderPausa()");
-//   sliderPlayState = false;
-//   btnToggle.children[0].src = iconsUrl + "play.svg";
-// }
-// /* Proxima imagen */
-// function sliderProximaImagen() {
-//   if (sliderImagenActual === Album.cfg.fotos) sliderImagenActual = 1;
-//   else sliderImagenActual++;
-//   sliderCambiarImagen(sliderImagenActual);
-// }
-// /* Cambia a una imagen */
-// function sliderCambiarImagen(img) {
-//   sliderImagenActual = img;
-//   const imgSrc = `//${Album.cfg.url}${sliderImagenActual}${Album.cfg.tipo}`;
-//   if (debbugMode) console.info(`Cambiando a imagen: ${imgSrc}`);
-//   sliderImage.src = imgSrc;
-// }
-
 /**
  * ! Funciones del Album
  */
 /* Carga Datos de la ventana Info */
 function cargarDatosDelAlbum() {
+  document.title = Album.titulo;
+
   if (!Album.id) return false;
-  // const primeraImagen = `//${Album.cfg.url}1${Album.cfg.tipo}`;
-  //const primeraImagen = `https://storage.googleapis.com/mialbum.ga/${Album.id}/imgs/1${Album.cfg.tipo}`;
-  //ventanaInfo.style.backgroundImage = `url(${primeraImagen})`;
-  //sliderImage.src = primeraImagen;
   ventanaSlider.style.setProperty(
     "--fotografo",
     '"Ⓒ ' + Fotografo.nombre + '"'

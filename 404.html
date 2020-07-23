@@ -22,25 +22,37 @@
           console.log(existe);
           if (existe) location.href = `//${location.host}/#${albumId}`;
           else {
-            msg.textContent = "El álbum no existe";
+            msg.textContent = `El álbum '${input.value}' no existe`;
           }
         } else {
-          msg.textContent = input.placeholder = "El álbum no existe";
+          msg.textContent = `Ingrese el código de un álbum`;
         }
       }
 
       async function getAlbumenIds() {
         console.log("Buscan álbumes...");
         try {
-          const url = "./site/database/albumes.json";
+          const url = "site/database/albumes.json";
           const response = await fetch(url);
           const data = await response.json();
+          console.info(`Encontrados: ${data.length} álbumes.`);
+          // console.table(data);
           AlbumesId = data.map((item) => item.id);
         } catch (error) {
           console.error(error);
         }
       }
     </script>
+    <style>
+      a,
+      a:visited {
+        color: inherit;
+      }
+
+      a:hover {
+        color: #f44336;
+      }
+    </style>
     <style>
       body {
         height: 100vh;
@@ -57,28 +69,64 @@
         font-size: 1.5em;
       }
 
-      input {
-        line-height: 3em;
-        text-align: center;
-        padding: 0 2em;
+      .logo {
+        max-width: 200px;
+        max-height: 200px;
+        margin: 50px;
       }
+
+      input,
       button {
-        margin: 1em;
+        text-align: center;
+        line-height: 2em;
+        padding: 0 2.5em;
+        font-size: 16px;
+        border: 0;
+        border-radius: 7px;
+        font-family: inherit;
+        padding: 5px 30px;
+      }
+
+      input:focus {
+        outline: 0;
+      }
+
+      button {
+        margin: 2em;
+        cursor: pointer;
+      }
+
+      #msg {
+        color: #f44336;
+        font-weight: 100;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <img
+        class="logo"
+        src="./site/images/logo_sin-fondo.svg"
+        alt="miAlbum.ga"
+      />
       <h1>Ingresar a un álbum</h1>
       <input
         onchange="ingresar()"
         id="input"
         type="text"
-        placeholder="Ingrese el código del álbum"
+        placeholder="Código del álbum"
         autocomplete
       />
-      <p id="msg"></p>
+      <div>
+        <small id="msg"></small>
+      </div>
       <button onclick="ingresar()">Ingresar</button>
+      <p>
+        Si tiene problemas para ingresar a un álbum, puedes
+        <a href="mailto:mialbum.ga@gmail.com"
+          >enviarnos un correo electrónico.</a
+        >
+      </p>
     </div>
   </body>
 </html>
