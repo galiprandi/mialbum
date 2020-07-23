@@ -3,18 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>?</title>
+    <title>MiAlbum.ga</title>
     <script>
-      const path = [...new Set(location.pathname.split("/"))].slice(-1);
+      let input, msg, AlbumesId;
+      document.addEventListener("DOMContentLoaded", function () {
+        getAlbumenIds();
+        input = document.getElementById("input");
+        msg = document.getElementById("msg");
+        input.focus();
+      });
 
-      if (!!path) {
-        const h1 = `<h1>${path}</h1>`;
-        const body = document.getElementsByName("body").appendChild(h1);
-        body.asdd;
+      function ingresar() {
+        const albumId = input.value;
+
+        if (albumId) {
+          const existe = !!AlbumesId.find((item) => item === albumId);
+          console.log(existe);
+          if (existe) location.href = `slider/#${albumId}`;
+          else {
+            msg.textContent = "El Álbum no existe";
+          }
+        } else {
+          msg.textContent = input.placeholder = "El álbum no existe";
+        }
+      }
+
+      async function getAlbumenIds() {
+        console.log("Buscan álbumes...");
+        try {
+          const url = "./site/database/albumes.json";
+          const response = await fetch(url);
+          const data = await response.json();
+          AlbumesId = data.map((item) => item.id);
+          console.log(AlbumesId);
+        } catch (error) {
+          console.error(error);
+        }
       }
     </script>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: system-ui;
+        background-color: #262626;
+        color: white;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      input {
+        line-height: 3em;
+        text-align: center;
+        padding: 0 2em;
+      }
+      button {
+        margin: 1em;
+      }
+    </style>
   </head>
   <body>
-    <h1>Álbum no encontrado</h1>
+    <div class="container">
+      <h1>Ingresar a un álbum</h1>
+      <input
+        onchange="ingresar()"
+        id="input"
+        type="text"
+        placeholder="Ingrese el código del álbum"
+        autocomplete
+      />
+      <p id="msg"></p>
+      <button onclick="ingresar()">Ingresar</button>
+    </div>
   </body>
 </html>
