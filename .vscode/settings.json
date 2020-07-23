@@ -1,0 +1,5 @@
+{
+    "minify.minifyExistingOnSave": true,
+    "es6-css-minify.enableAutoprefixer": true,
+    "es6-css-minify.minifyOnSave": "exists"
+}
