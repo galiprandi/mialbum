@@ -2,7 +2,7 @@
 let sliderPlayState = false; // Estado del Slider
 let sliderImagenActual = 1; // Imagen actual
 let sliderTimer = 5000; // Slider default timer
-const databaseUrl = "../site/database/"; // URL de las bases de datos
+const databaseUrl = "site/database/"; // URL de las bases de datos
 let AlbumId = "demo"; // ID del Album
 let Album = null;
 let Fotografo = null;
